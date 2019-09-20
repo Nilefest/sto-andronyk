@@ -1,0 +1,420 @@
+body {
+    overflow-x: hidden;
+}
+
+/* ----- header -----*/
+header {
+    padding-left: 70px;
+    border-bottom: 4px solid #2d99b7;
+}
+
+header img.logo {
+    width: 295px;
+    float: left;
+}
+
+header h1 {
+    margin: 20px 30px;
+    width: 75%;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    color: #930f04;
+}
+
+/* ----- nav -----*/
+.nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #bcfaff;
+    height: 100vh;
+    width: 70px;
+}
+
+.nav ul {
+    padding: 0px;
+}
+
+.nav li {
+    position: relative;
+    left: -130px;
+    list-style: none;
+    width: 200px;
+    background-color: #bcfaff;
+    margin: 5px 0px;
+    border-bottom: 2px solid #2d99b7;
+    transition: all .2s;
+}
+
+.nav li:hover {
+    left: 0px;
+    background-color: #ccf4ff;
+    border-bottom-color: #1a6377;
+    transition: all .4s;
+}
+
+.nav li a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #2e3233;
+}
+
+.nav li span {
+    padding-left: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nav li a:hover {
+    text-decoration: none;
+    text-align: right;
+}
+
+.nav li img {
+    height: 50px;
+    width: 50px;
+    float: right;
+    height: inherit;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.nav .menu {
+    background-color: #ccf4ff;
+    border-bottom: 2px solid #2d99b7;
+    width: 70px;
+    padding: 20px;
+}
+
+/* ----- content -----*/
+.content {
+    padding-left: 70px;
+    min-height: 63vh;
+}
+
+.content h2.title {
+    width: 100%;
+    border-bottom: 2px solid #2d99b7;
+    text-align: center;
+    font-size: 40px;
+}
+
+.content h3.title {
+    width: 100%;
+    background-color: rgba(30, 215, 232, 0.2);
+    border-bottom: 2px solid #2d99b7;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+/* ----- table -----*/
+.form,
+.table {
+    border: 1px solid #2d99b7;
+    border-radius: 10px;
+    padding: 15px;
+    width: 96%;
+    margin: 1px 2%;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table tr {
+    border-bottom: 1px solid #87b9c1;
+}
+
+.table thead tr,
+.table tr:hover {
+    background-color: #f2fdff;
+    border-bottom: 2px solid #87b9c1;
+}
+
+.table th,
+.table td {
+    border-left: 1px solid #d7f2f7;
+    font-size: 15px;
+}
+
+.table th {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.table td {
+    padding: 0px 5px;
+}
+
+.table tr th:first-child,
+.table tr td:first-child {
+    border-left: none;
+}
+
+.table tr th:last-child,
+.table tr td:last-child,
+.table tr th:first-child,
+.table tr td:first-child {
+    text-align: center;
+    width: 50px;
+}
+
+.table a {
+    display: block;
+}
+
+.table img {
+    height: 30px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+.table tr.total {
+    background-color: #f2fdff;
+    border-top: 2px solid #87b9c1;
+    border-bottom: 2px solid #87b9c1;
+}
+
+.table td {
+    position: relative;
+}
+
+tr.plus{
+    background-color: #d3ffd8;
+    background-color: rgba(0, 255, 0, 0.1);
+}
+tr.minus{
+    background-color: #fcd5d1;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* ----- footer -----*/
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    padding-left: 70px;
+    background-color: #87b9c1;
+}
+
+footer .logo {
+    float: right;
+    width: 15%;
+}
+
+footer .logo img {
+    height: 120px;
+    padding: 20px;
+}
+
+footer .contact {
+    text-align: center;
+    font-size: 18px;
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+
+footer .addr {
+    font-size: 18px;
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+footer a {
+    display: block;
+    background-color: #2d99b7;
+    font-size: 15px;
+    text-align: center;
+    padding: 2px 0px;
+    color: #eee;
+}
+
+/* ----- search -----*/
+.search,
+.period {
+    padding: 10px 0px;
+}
+
+.search label {
+    font-size: 18px;
+    width: 29%;
+}
+
+.search input {
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    width: 70%;
+}
+
+.search input:focus {
+    border: 1px solid #77eaff;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ----- add -----*/
+.add {
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    padding: 5px 15px;
+    width: 96%;
+    margin: 0px 2%;
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.add .title {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    color: #6495af;
+    cursor: pointer;
+}
+
+.add .title img {
+    height: 20px;
+}
+
+.form label,
+.add label {
+    text-align: left;
+    font-size: 18px;
+    width: 28%;
+    padding: 10px;
+}
+
+.form select,
+.form input[type='text'],
+.form input[type='date'],
+.form input[type='password'],
+.form textarea,
+.add select,
+.add input[type='text'],
+.add input[type='date'],
+.add input[type='password'],
+.add textarea {
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    width: 70%;
+}
+
+
+.form input[type="submit"],
+.form input[type="button"],
+.add input[type="submit"],
+.add input[type="button"] {
+    font-size: 16px;
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    transition: all .2s;
+    background-color: #fff;
+    color: #000;
+}
+
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover,
+.add input[type="submit"]:hover,
+.add input[type="button"]:hover {
+    color: #fff;
+    background-color: #2d99b7;
+    transition: all .1s;
+}
+
+/* ----- period -----*/
+
+.period label {
+    font-size: 18px;
+    width: auto;
+    text-align: right;
+}
+
+.period input[type="date"] {
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    width: 10%;
+}
+
+.period input[type="date"]:focus {
+    border: 1px solid #77eaff;
+}
+
+.period input[type="button"] {
+    font-size: 16px;
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    transition: all .2s;
+    background-color: #fff;
+    color: #000;
+}
+
+.period input[type="button"]:hover {
+    color: #fff;
+    background-color: #2d99b7;
+    transition: all .1s;
+}
+
+/* ----- form_count -----*/
+.form_count {
+    position: absolute;
+    width: 240px;
+    z-index: 1000;
+    left: -200px;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px 2%;
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.form_count input[type="text"] {
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 15px;
+    width: 110px;
+}
+
+.form_count input[type="submit"] {
+    width: 90px;
+    font-size: 15px;
+    border: 1px solid #2d99b7;
+    border-radius: 5px;
+    transition: all .2s;
+    background-color: #fff;
+    color: #000;
+}
+
+.form_count input[type="submit"]:hover {
+    color: #fff;
+    background-color: #2d99b7;
+    transition: all .1s;
+}
+
+.form_count img#close {
+    width: 23px;
+    height: 23px;
+    float: right;
+    margin: 2px;
+    cursor: pointer;
+}

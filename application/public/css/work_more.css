@@ -1,0 +1,15 @@
+fieldset {
+    text-align: left;
+}
+
+fieldset label {
+    width: auto !important;
+}
+
+fieldset input {
+    width: auto !important;
+}
+
+fieldset select {
+    width: auto !important;
+}

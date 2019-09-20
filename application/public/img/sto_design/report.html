@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СТО | Отчёт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/service.png" alt="Logo">
+        <h1>СТО</h1>
+        <div class="clear"></div>
+        <div class="nav">
+            <img class="menu" src="./img/ico/menu.png" alt="menu">
+            <ul>
+                <li><a href="./clients.html"><span>Клиент</span><img src="./img/ico/client.png" alt="client"></a></li>
+                <li><a href="./employees.html"><span>Сотрудники</span><img src="./img/ico/employee.png" alt="employee"></a></li>
+                <li><a href="./stock.html"><span>Склад</span><img src="./img/ico/stock.png" alt="stock"></a></li>
+                <li><a href="./work.html"><span>Работы</span><img src="./img/ico/work.png" alt="work"></a></li>
+                <li><a href="./report.html"><span>Отчёт</span><img src="./img/ico/report.png" alt="report"></a></li>
+                <li><a href="./info.html"><span>Справка</span><img src="./img/ico/info.png" alt="info"></a></li>
+                <li><a href="./login.html?logout=1"><span>Выйти</span><img src="./img/ico/logout.png" alt="info"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <h2 class="title">Отчёт</h2>
+        <div id="add_win" class="add">
+            <span id="add_b" class="title">Добавить запись <img src="./img/ico/down.png" alt="add"></span>
+            <form action="" method="post">
+                <label for="date">Дата записи</label>
+                <input type="date" name="date" id="date"><br>
+                <label for="name">Кто записал</label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия"><br>
+                <label for="object">Описание</label>
+                <textarea name="object" id="object" placeholder="Объект и предмет расходов / доходов"></textarea><br>
+                <label for="sum">Сумма, грн</label>
+                <input type="text" name="sum" id="sum" placeholder="Сумма"><br>
+                <input type="submit" name="add_cl" value="Добавить">
+            </form>
+        </div>
+        <div class="table">
+            <div class="period">
+                <label for="date_st">Период с</label>
+                <input type="date" name="date_st" id="date_st">
+                <label for="date_fin">по</label>
+                <input type="date" name="date_fin" id="date_fin">
+                <input type="button" name="period" id="period" value="Фильтр">
+            </div>
+            <div class="search">
+                <label for="search_word">Для поиска начните вводить любые данные</label>
+                <input type="text" name="search_word" id="search_word">
+            </div>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Дата</th>
+                    <th>Кто записал</th>
+                    <th>Объект</th>
+                    <th>Сумма</th>
+                    <th></th>
+                </tr>
+                <tr class="plus">
+                    <td>1</td>
+                    <td>01.02.2018</td>
+                    <td>Имя 1</td>
+                    <td>Объект такой-то, предмет то-то</td>
+                    <td>121.00</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr class="minus">
+                    <td>2</td>
+                    <td>01.02.2018</td>
+                    <td>Имя 1</td>
+                    <td>Объект такой-то, предмет то-то</td>
+                    <td>-1211.00</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr class="plus">
+                    <td>3</td>
+                    <td>01.02.2018</td>
+                    <td>Имя 1</td>
+                    <td>Объект такой-то, предмет то-то</td>
+                    <td>114421.00</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr class="minus">
+                    <td>4</td>
+                    <td>01.02.2018</td>
+                    <td>Имя 1</td>
+                    <td>Объект такой-то, предмет то-то</td>
+                    <td>-11.00</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr class="total">
+                    <td>21</td>
+                    <td>ВСЕГО</td>
+                    <td>Итог : <b>200,20</b></td>
+                    <td>Остато : <b>1054,20</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="./img/service.png" alt="Logo">
+        </div>
+        <div class="contact">
+            +380123456789<br>
+            +380987654321<br>
+            sto.andr@gmail.com
+        </div>
+        <div class="addr">
+            ООО «БРОВАФАРМА» б-р Независимости, 18-а, г. Бровары, Киевская обл., Украина, 07400
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="copyright">Copyright © 2018 Nilefest</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script>
+        var is_open = 0;
+        $("#add_b").click(function() {
+            if (is_open == 0) {
+                $("#add_win").stop().animate({
+                    height: 320
+                }, 200);
+                is_open = 1;
+            } else {
+                $("#add_win").stop().animate({
+                    height: 40
+                }, 200);
+                is_open = 0;
+            }
+        });
+
+        $('html').on('click', 'img#rem_row', function() {
+            $(this).parent().parent().remove();
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СТО | Сотрудники</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/service.png" alt="Logo">
+        <h1>СТО</h1>
+        <div class="clear"></div>
+        <div class="nav">
+            <img class="menu" src="./img/ico/menu.png" alt="menu">
+            <ul>
+                <li><a href="./clients.html"><span>Клиент</span><img src="./img/ico/client.png" alt="client"></a></li>
+                <li><a href="./employees.html"><span>Сотрудники</span><img src="./img/ico/employee.png" alt="employee"></a></li>
+                <li><a href="./stock.html"><span>Склад</span><img src="./img/ico/stock.png" alt="stock"></a></li>
+                <li><a href="./work.html"><span>Работы</span><img src="./img/ico/work.png" alt="work"></a></li>
+                <li><a href="./report.html"><span>Отчёт</span><img src="./img/ico/report.png" alt="report"></a></li>
+                <li><a href="./info.html"><span>Справка</span><img src="./img/ico/info.png" alt="info"></a></li>
+                <li><a href="./login.html?logout=1"><span>Выйти</span><img src="./img/ico/logout.png" alt="info"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <h2 class="title">Сотрудники</h2>
+        <div id="add_win" class="add">
+            <span id="add_b" class="title">Добавить сотрудника <img src="./img/ico/down.png" alt="add"></span>
+            <form action="" method="post">
+                <label for="name">ФИО</label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия Отчество"><br>
+                <label for="contact">Контактные данные</label>
+                <textarea name="contact" id="contact" placeholder="Телефон, почта..."></textarea><br>
+                <input type="submit" name="add_cl" value="Добавить">
+            </form>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Имя</th>
+                    <th>Контакты</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Имя 1</td>
+                    <td>контактные данные...</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Имя 2</td>
+                    <td>контактные данные...</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Имя 3</td>
+                    <td>контактные данные...</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Имя 4</td>
+                    <td>контактные данные...</td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="./img/service.png" alt="Logo">
+        </div>
+        <div class="contact">
+            +380123456789<br>
+            +380987654321<br>
+            sto.andr@gmail.com
+        </div>
+        <div class="addr">
+            ООО «БРОВАФАРМА» б-р Независимости, 18-а, г. Бровары, Киевская обл., Украина, 07400
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="copyright">Copyright © 2018 Nilefest</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script>
+        var is_open = 0;
+        $("#add_b").click(function() {
+            if (is_open == 0) {
+                $("#add_win").stop().animate({
+                    height: 210
+                }, 200);
+                is_open = 1;
+            } else {
+                $("#add_win").stop().animate({
+                    height: 40
+                }, 200);
+                is_open = 0;
+            }
+        });
+
+        $('html').on('click', 'img#rem_row', function() {
+            $(this).parent().parent().remove();
+        });
+
+    </script>
+</body>
+
+</html>

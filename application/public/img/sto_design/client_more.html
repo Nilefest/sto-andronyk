@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СТО | Имя Фамилия</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/service.png" alt="Logo">
+        <h1>СТО</h1>
+        <div class="clear"></div>
+        <div class="nav">
+            <img class="menu" src="./img/ico/menu.png" alt="menu">
+            <ul>
+                <li><a href="./clients.html"><span>Клиент</span><img src="./img/ico/client.png" alt="client"></a></li>
+                <li><a href="./employees.html"><span>Сотрудники</span><img src="./img/ico/employee.png" alt="employee"></a></li>
+                <li><a href="./stock.html"><span>Склад</span><img src="./img/ico/stock.png" alt="stock"></a></li>
+                <li><a href="./work.html"><span>Работы</span><img src="./img/ico/work.png" alt="work"></a></li>
+                <li><a href="./report.html"><span>Отчёт</span><img src="./img/ico/report.png" alt="report"></a></li>
+                <li><a href="./info.html"><span>Справка</span><img src="./img/ico/info.png" alt="info"></a></li>
+                <li><a href="./login.html?logout=1"><span>Выйти</span><img src="./img/ico/logout.png" alt="info"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <h2 class="title">КЛИЕНТ: Имя Фамилия</h2>
+        <div class="form">
+            <form action="" method="post">
+                <label for="name">ФИО</label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия Отчество"><br>
+                <label for="contact">Контактные данные</label>
+                <textarea name="contact" id="contact" placeholder="Телефон, почта..."></textarea>
+                <label for="car">Марка авто</label>
+                <input type="text" name="car" id="car" placeholder="марка">
+                <label for="car_num">Номер</label>
+                <input type="text" name="car_num" id="car_num" placeholder="номер"><br>
+                <input type="submit" name="save" value="Сохранить">
+            </form>
+        </div>
+        <h3 class="title">Проводимые работы</h3>
+        <div class="table">
+            <div class="period">
+                <label for="date_st">Период с</label>
+                <input type="date" name="date_st" id="date_st">
+                <label for="date_fin">по</label>
+                <input type="date" name="date_fin" id="date_fin">
+                <input type="button" name="period" id="period" value="Фильтр">
+            </div>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Имя сотрудника</th>
+                    <th>Авто</th>
+                    <th>Дата начала</th>
+                    <th>Дата окончания</th>
+                    <th>Операции</th>
+                    <th>Стоимость работ</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Сотрудник</td>
+                    <td>Марка авто (номер)</td>
+                    <td>01.01.2007</td>
+                    <td>20.01.2008</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, ab assumenda asperiores totam aliquam expedita minima tenetur placeat fugit nihil veritatis repellendus corporis dolorem est. Voluptatibus neque cupiditate necessitatibus, consectetur sed. Quisquam hic, voluptatum fugit ullam officia, beatae atque vero sequi. Soluta animi, illum sequi ex ad, beatae eligendi saepe.</td>
+                    <td>200.00</td>
+                    <td><a href="./work_more.html"><img src="./img/ico/edit.png" alt="edit"></a></td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Сотрудник</td>
+                    <td>Марка авто (номер)</td>
+                    <td>01.01.2007</td>
+                    <td>20.01.2008</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, ab assumenda asperiores totam aliquam expedita minima tenetur placeat fugit nihil veritatis repellendus corporis dolorem est. Voluptatibus neque cupiditate necessitatibus, consectetur sed. Quisquam hic, voluptatum fugit ullam officia, beatae atque vero sequi. Soluta animi, illum sequi ex ad, beatae eligendi saepe.</td>
+                    <td>200.00</td>
+                    <td><a href="./work_more.html"><img src="./img/ico/edit.png" alt="edit"></a></td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Сотрудник</td>
+                    <td>Марка авто (номер)</td>
+                    <td>01.01.2007</td>
+                    <td>20.01.2008</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, ab assumenda asperiores totam aliquam expedita minima tenetur placeat fugit nihil veritatis repellendus corporis dolorem est. Voluptatibus neque cupiditate necessitatibus, consectetur sed. Quisquam hic, voluptatum fugit ullam officia, beatae atque vero sequi. Soluta animi, illum sequi ex ad, beatae eligendi saepe.</td>
+                    <td>200.00</td>
+                    <td><a href="#"><img src="./img/ico/edit.png" alt="edit"></a></td>
+                    <td><img src="./img/ico/rem.png" alt="rem" id="rem_row"></td>
+                </tr>
+                <tr class="total">
+                    <td>21</td>
+                    <td>всего</td>
+                    <td>Охваченный период</td>
+                    <td>01.01.2007</td>
+                    <td>20.01.2008</td>
+                    <td></td>
+                    <td>1500.00</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="./img/service.png" alt="Logo">
+        </div>
+        <div class="contact">
+            +380123456789<br>
+            +380987654321<br>
+            sto.andr@gmail.com
+        </div>
+        <div class="addr">
+            ООО «БРОВАФАРМА» б-р Независимости, 18-а, г. Бровары, Киевская обл., Украина, 07400
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="copyright">Copyright © 2018 Nilefest</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script>
+        $('html').on('click', 'img#rem_row', function() {
+            $(this).parent().parent().remove();
+        });
+
+    </script>
+</body>
+
+</html>

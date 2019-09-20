@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СТО | Справка</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/service.png" alt="Logo">
+        <h1>СТО</h1>
+        <div class="clear"></div>
+        <div class="nav">
+            <img class="menu" src="./img/ico/menu.png" alt="menu">
+            <ul>
+                <li><a href="./clients.html"><span>Клиент</span><img src="./img/ico/client.png" alt="client"></a></li>
+                <li><a href="./employees.html"><span>Сотрудники</span><img src="./img/ico/employee.png" alt="employee"></a></li>
+                <li><a href="./stock.html"><span>Склад</span><img src="./img/ico/stock.png" alt="stock"></a></li>
+                <li><a href="./work.html"><span>Работы</span><img src="./img/ico/work.png" alt="work"></a></li>
+                <li><a href="./report.html"><span>Отчёт</span><img src="./img/ico/report.png" alt="report"></a></li>
+                <li><a href="./info.html"><span>Справка</span><img src="./img/ico/info.png" alt="info"></a></li>
+                <li><a href="./login.html?logout=1"><span>Выйти</span><img src="./img/ico/logout.png" alt="info"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <h2 class="title">Справка</h2>
+        <div class="table">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quidem mollitia nemo illum laborum minima necessitatibus dolore tenetur repellat voluptas nulla nam error impedit voluptate consequatur placeat quaerat at perferendis, aliquam harum culpa quisquam, ex. Alias nulla ad quo odit optio minima, numquam consectetur nihil!</p>
+            <p>Saepe labore magni amet optio est corrupti in mollitia sunt, porro libero nihil tenetur ipsa repellendus debitis cumque quam totam, pariatur delectus expedita omnis consequatur beatae fugiat odit. Nostrum perspiciatis, recusandae ratione reiciendis voluptates voluptatem dolorum, doloremque repudiandae fuga nam adipisci temporibus asperiores obcaecati. Odit.</p>
+            <p>Laboriosam vitae doloremque cupiditate architecto, quidem similique, labore velit nobis necessitatibus quam voluptas praesentium totam facilis. Rem delectus velit enim quidem quibusdam autem quis itaque magni nemo exercitationem quae magnam excepturi deserunt aut doloribus, dolore sit ducimus, quo earum, voluptatum eligendi quod id inventore. Harum?</p>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="./img/service.png" alt="Logo">
+        </div>
+        <div class="contact">
+            +380123456789<br>
+            +380987654321<br>
+            sto.andr@gmail.com
+        </div>
+        <div class="addr">
+            ООО «БРОВАФАРМА» б-р Независимости, 18-а, г. Бровары, Киевская обл., Украина, 07400
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="copyright">Copyright © 2018 Nilefest</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script>
+        var is_open = 0;
+        $("#add_b").click(function() {
+            if (is_open == 0) {
+                $("#add_win").stop().animate({
+                    height: 320
+                }, 200);
+                is_open = 1;
+            } else {
+                $("#add_win").stop().animate({
+                    height: 40
+                }, 200);
+                is_open = 0;
+            }
+        });
+
+        $('html').on('click', 'img#rem_row', function() {
+            $(this).parent().parent().remove();
+        });
+
+    </script>
+</body>
+
+</html>

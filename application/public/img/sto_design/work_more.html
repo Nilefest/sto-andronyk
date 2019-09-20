@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СТО | #4654</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/icomoon.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        fieldset{
+            text-align: left;
+        }
+        fieldset label{
+            width: auto !important;
+        }
+        fieldset input{
+            width: auto !important;
+        }
+        fieldset select{
+            width: auto !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/service.png" alt="Logo">
+        <h1>СТО</h1>
+        <div class="clear"></div>
+        <div class="nav">
+            <img class="menu" src="./img/ico/menu.png" alt="menu">
+            <ul>
+                <li><a href="./clients.html"><span>Клиент</span><img src="./img/ico/client.png" alt="client"></a></li>
+                <li><a href="./employees.html"><span>Сотрудники</span><img src="./img/ico/employee.png" alt="employee"></a></li>
+                <li><a href="./stock.html"><span>Склад</span><img src="./img/ico/stock.png" alt="stock"></a></li>
+                <li><a href="./work.html"><span>Работы</span><img src="./img/ico/work.png" alt="work"></a></li>
+                <li><a href="./report.html"><span>Отчёт</span><img src="./img/ico/report.png" alt="report"></a></li>
+                <li><a href="./info.html"><span>Справка</span><img src="./img/ico/info.png" alt="info"></a></li>
+                <li><a href="./login.html?logout=1"><span>Выйти</span><img src="./img/ico/logout.png" alt="info"></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <h2 class="title">РАБОТЫ: #4654</h2>
+        <div class="form">
+            <form action="" method="post">
+                <form action="" method="post">
+                    <label for="employee">Сотрудник</label>
+                    <select name="employee" id="employee">
+                        <option value="1">Сотрудник 1</option>
+                        <option value="2">Сотрудник 2</option>
+                        <option value="3">Сотрудник 3</option>
+                        <option value="4">Сотрудник 4</option>
+                        <option value="5">Сотрудник 5</option>
+                    </select>
+                    <label for="client">Клиент</label>
+                    <select name="client" id="client">
+                        <option value="1">Клиент 1</option>
+                        <option value="2">Клиент 2</option>
+                        <option value="3">Клиент 3</option>
+                        <option value="4">Клиент 4</option>
+                        <option value="5">Клиент 5</option>
+                    </select>
+                    <label for="date_st">Дата начала</label>
+                    <input type="date" name="date_st" id="date_st">
+                    <label for="date_fin">Дата окончания</label>
+                    <input type="date" name="date_fin" id="date_fin">
+                    <fieldset>
+                        <h3 class="title">Детали и материалы со склада</h3>
+                        <hr>
+                        <label for="detail">Наименование</label>
+                        <select name="detail" id="detail">
+                            <option value="1">Деталь 1</option>
+                            <option value="2">Деталь 2</option>
+                            <option value="3">Материал 3</option>
+                            <option value="4">Материал 4</option>
+                            <option value="5">Деталь 5</option>
+                        </select>
+                        <label for="det_count">Количество</label>
+                        <input type="text" name="det_count" id="det_count" placeholder="Количество">
+                        <input type="button" name="det_add" id="det_add" value="Добавить делать">
+                        <div class="table">
+                            <table id="det_tab">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Наименование</th>
+                                        <th>Цена за 1</th>
+                                        <th>Количество</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tr class="total">
+                                    <td><span class="count_all">0</span></td>
+                                    <td>Общая стоимость</td>
+                                    <td><span class="sum_all">0.00</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <hr>
+                    </fieldset>
+                    <label for="cost">Дата стоимость работ</label>
+                    <input type="text" name="cost" id="cost" placeholder="Сумма">
+                    <input type="submit" name="save" value="Сохранить">
+                </form>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="./img/service.png" alt="Logo">
+        </div>
+        <div class="contact">
+            +380123456789<br>
+            +380987654321<br>
+            sto.andr@gmail.com
+        </div>
+        <div class="addr">
+            ООО «БРОВАФАРМА» б-р Независимости, 18-а, г. Бровары, Киевская обл., Украина, 07400
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-12">
+                <a href="#" class="copyright">Copyright © 2018 Nilefest</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script>
+        var det_all = {
+            1: ['Деталь 1', "12.00"],
+            2: ['Деталь 2', "456.00"],
+            3: ['Материал 3', "23.00"],
+            4: ['Материал 4', "98.00"],
+            5: ['Деталь 4', "2524.00"]
+        };
+
+        $('#det_add').click(function() {
+            $('table#det_tab > tbody').prepend("<tr><td>" + $('#detail').val() + "</td><td>" + det_all[$('#detail').val()][0] + "</td><td>" + det_all[$('#detail').val()][1] + "</td><td>" + $('#det_count').val() + "</td><td><img src=\"./img/ico/rem.png\" alt=\"rem\" id=\"rem_row\"></td></tr>");
+        });
+        $('html').on('click', 'img#rem_row', function() {
+            $(this).parent().parent().remove();
+        });
+
+    </script>
+</body>
+
+</html>
