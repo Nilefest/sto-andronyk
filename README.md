@@ -1,5 +1,1 @@
-Сайт для учёта СТО (Андроник)
-
-----
-
-Old simple project with simple mvc-framework
+# [2019] CRM for Automobile service station
